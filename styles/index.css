@@ -50,6 +50,10 @@ header {
     cursor: pointer;
 }
 
+.mode-button:hover {
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
 .dark-mode {
     background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
@@ -109,11 +113,20 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: background-color 1s;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.user-section .container:hover {
+    background-color: rgba(229, 229, 229, 0.67);
 }
 
 .user-section .changed-containers {
     background-color: hsl(228, 28%, 20%);
+}
+
+.user-section .changed-containers:hover {
+    background-color: hsla(229, 27%, 20%, 0.401);
 }
 
 .user-section .container::before {
@@ -216,9 +229,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
-    row-gap: 30px; */
 }
 
 .top,
@@ -250,7 +260,12 @@ header {
     /* border: 1px solid red; */
     padding: 10px 20px;
     position: relative;
-    transition: background-color 1s;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.overview .container:hover {
+    background-color: rgba(229, 229, 229, 0.67);
 }
 
 .overview .cont {
@@ -259,6 +274,10 @@ header {
 
 .overview .changed-containers {
     background-color: hsl(228, 28%, 20%);
+}
+
+.overview .changed-containers:hover {
+    background-color: hsla(229, 27%, 20%, 0.401);
 }
 
 .overview .container .interaction {
