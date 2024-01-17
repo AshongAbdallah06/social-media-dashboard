@@ -212,13 +212,28 @@ header {
 }
 
 .overview {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 30px; */
+}
+
+.top,
+.bottom {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .overview-heading {
+    display: flex;
+    justify-content: left;
     font-size: 20px;
     color: hsl(228, 12%, 44%);
 }
@@ -228,12 +243,18 @@ header {
 }
 
 .overview .container {
+    width: 23%;
+    margin-right: 20px;
     background-color: hsl(227, 47%, 96%);
     border-radius: 5px;
     /* border: 1px solid red; */
     padding: 10px 20px;
     position: relative;
     transition: background-color 1s;
+}
+
+.overview .cont {
+    margin: 0;
 }
 
 .overview .changed-containers {
@@ -245,6 +266,7 @@ header {
     color: hsl(228, 12%, 44%);
     font-weight: 700;
     position: relative;
+    white-space: nowrap;
 }
 
 .overview .container .interaction::after {

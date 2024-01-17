@@ -4,6 +4,9 @@ let overviewHeading = document.querySelector('.overview-heading');
 let allContrainers = document.querySelectorAll('.container');
 
 
+
+// Remember to animate icons Inshallah
+
 let bgIsWhite;
 changeModeBtn.addEventListener('click', () => {
     if (!bgIsWhite) {
