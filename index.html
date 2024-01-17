@@ -5,83 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; left: 0; right: 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+	<main>
+		<header>
+			<div class="header-left">
+				<h1 class="heading">Social Media Dashboard</h1>
+				<div class="total-followers">Total Followers: 23,004</div>
+			</div>
 
-  Dark Mode
+			<div class="header-right">
+				<p class="mode">Dark Mode</p>
 
+				<button class="mode-button">
+					<div class="slider-right"></div>
+				</button>
+			</div>
+		</header>
+
+
+		<section class="user-section">
+			<div class="container fb">
+				<div class="user">
+					<img src="images/icon-facebook.svg" alt="fb-icon">
+					<p class="user-name">@nathanf</p>
+				</div>
+
+				<div class="followers-count">
+					<div class="count">1987</div>
+					<p class="followers-label">FOLLOWERS</p>
+
+					<div class="today-count">
+						<img src="images/icon-up.svg" alt="up-icon">
+						<div class="count">12 Today</div>
+					</div>
+				</div>
+			</div>
+			<div class="container twitter">
+				<div class="user">
+					<img src="images/icon-twitter.svg" alt="twitter-icon">
+					<p class="user-name">@nathanf</p>
+				</div>
+
+				<div class="followers-count">
+					<div class="count">1044</div>
+					<p class="followers-label">FOLLOWERS</p>
+
+					<div class="today-count">
+						<img src="images/icon-up.svg" alt="up-icon">
+						<div class="count">99 Today</div>
+					</div>
+				</div>
+			</div>
+			<div class="container ig">
+				<div class="user">
+					<img src="images/icon-instagram.svg" alt="ig-icon">
+					<p class="user-name">@realnathanf</p>
+				</div>
+
+				<div class="followers-count">
+					<div class="count">11k</div>
+					<p class="followers-label">FOLLOWERS</p>
+
+					<div class="today-count">
+						<img src="images/icon-up.svg" alt="up-icon">
+						<div class="count">1099 Today</div>
+					</div>
+				</div>
+			</div>
+			<div class="container youtube">
+				<div class="user">
+					<img src="images/icon-youtube.svg" alt="youtube-icon">
+					<p class="user-name">Nathan F</p>
+				</div>
+
+				<div class="followers-count">
+					<div class="count">8239</div>
+					<p class="followers-label">SUBSCRIBERS</p>
+
+					<div class="today-count">
+						<img src="images/icon-down.svg" alt="up-icon">
+						<div class="count"><span>144 Today</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="overview-section">
+			<h2 class="overview-heading">Overview - Today</h2>
+			
+
+			<div class="overview">
+				<div class="container">
+					<p class="interaction interaction-fb">Page Views</p>
+					<p class="interaction-count">
+						87 
+						<span class="percent">
+							<img src="images/icon-up.svg" alt="">3%
+						</span>
+					</p>
+				</div>
+	
+				<div class="container">
+					<p class="interaction interaction-fb">Likes</p>
+					<p class="interaction-count">
+						52
+						<span class="percent down">
+							<img src="images/icon-down.svg" alt="">2%
+						</span>
+					</p>
+				</div>
+
+				<div class="container">
+					<p class="interaction interaction-ig">Likes</p>
+					<p class="interaction-count">
+						5462
+						<span class="percent">
+							<img src="images/icon-up.svg" alt="">2257%
+						</span>
+					</p>
+				</div>
+
+				<div class="container">
+					<p class="interaction interaction-ig">Profile Views</p>
+					<p class="interaction-count">
+						52k
+						<span class="percent">
+							<img src="images/icon-up.svg" alt="">1375%
+						</span>
+					</p>
+				</div>
+
+				<div class="container">
+					<p class="interaction interaction-twitter">Retweets</p>
+					<p class="interaction-count">
+						117
+						<span class="percent">
+							<img src="images/icon-up.svg" alt="">303%
+						</span>
+					</p>
+				</div>
+
+				<div class="container">
+					<p class="interaction interaction-twitter">Likes</p>
+					<p class="interaction-count">
+						507
+						<span class="percent">
+							<img src="images/icon-up.svg" alt="">553%
+						</span>
+					</p>
+				</div>
+
+				<div class="container">
+					<p class="interaction interaction-youtube">Likes</p>
+					<p class="interaction-count">
+						107
+						<span class="percent down">
+							<img src="images/icon-down.svg" alt="">19%
+						</span>
+					</p>
+				</div>
+
+				<div class="container">
+					<p class="interaction interaction-youtube">Profile Views</p>
+					<p class="interaction-count">
+						1407
+						<span class="percent down">
+							<img src="images/icon-down.svg" alt="">12%
+						</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
   
+	<footer class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="#">Ashong Abdallah</a>.
+	</footer>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+	<script src="index.js"></script>
 </body>
 </html>

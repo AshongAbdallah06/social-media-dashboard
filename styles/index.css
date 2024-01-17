@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', serif;
+    padding: 50px;
+    position: relative;
+    color: hsl(230, 17%, 14%);
+    transition: background-color 1s;
+}
+
+.changed-body {
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    margin: 0;
+    font-size: 30px;
+}
+
+.total-followers {
+    font-size: 12px;
+    margin: 0;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+.mode {
+    display: inline-block;
+    font-size: 13px;
+    color: hsl(228, 12%, 44%);
+    font-weight: 400;
+}
+
+.mode-button {
+    position: relative;
+    height: 22px;
+    width: 50px;
+    background-color: hsl(230, 22%, 74%);
+    border: none;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.slider-right {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.slider-left {
+    animation: slider 0.5s linear forwards;
+}
+
+.remove-slider-left {
+    animation: slideBack 0.5s linear forwards;
+}
+
+
+@keyframes slider {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-22px);
+        background-color: hsl(228, 28%, 20%);
+    }
+}
+
+@keyframes slideBack {
+    from {
+        transform: translateX(-22px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+.user-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-section .container {
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 5px;
+    width: 23%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 1s;
+}
+
+.user-section .changed-containers {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.user-section .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.fb::before {
+    background-color: hsl(208, 92%, 53%);
+}
+
+.twitter::before {
+    background-color: hsl(203, 89%, 53%);
+}
+
+.ig::before {
+    background: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.youtube::before {
+    background-color: hsl(356, 69%, 56%);
+}
+
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img {
+    vertical-align: middle;
+}
+
+.user-name {
+    padding-left: 10px;
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.followers-count {
+    margin-top: 15px;
+}
+
+.followers-count .count {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.followers-label {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.313rem;
+    color: hsl(228, 12%, 44%);
+    /* color: hsl(230, 22%, 74%); */
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.today-count {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.today-count img {
+    vertical-align: middle;
+}
+
+.today-count .count {
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+.today-count span {
+    color: hsl(356, 69%, 56%);
+}
+
+
+
+.overview-section {
+    margin-top: 50px;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.overview-heading {
+    font-size: 20px;
+    color: hsl(228, 12%, 44%);
+}
+
+.changed-heading { 
+    color: white;
+}
+
+.overview .container {
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 1s;
+}
+
+.overview .changed-containers {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.overview .container .interaction {
+    font-size: 14px;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    position: relative;
+}
+
+.overview .container .interaction::after {
+    position: absolute;
+    right: 0;
+}
+
+.overview .container .interaction-fb::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-facebook.svg');
+}
+
+.overview .container .interaction-fb::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-facebook.svg');
+}
+
+.overview .container .interaction-ig::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-instagram.svg');
+}
+
+.overview .container .interaction-ig::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-instagram.svg');
+}
+
+.overview .container .interaction-twitter::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-twitter.svg');
+}
+
+.overview .container .interaction-twitter::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-twitter.svg');
+}
+
+.overview .container .interaction-youtube::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-youtube.svg');
+}
+
+.overview .container .interaction-youtube::after {
+    position: absolute;
+    right: 0;
+    content: url('/images/icon-youtube.svg');
+}
+
+.interaction-count {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.percent {
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    vertical-align: middle;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
+}
+
+.percent img {
+    margin-right: 2px;
+}
+
