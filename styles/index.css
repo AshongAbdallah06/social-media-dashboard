@@ -118,7 +118,7 @@ header {
 }
 
 .user-section .container:hover {
-    background-color: rgba(229, 229, 229, 0.67);
+    background-color: hsl(226, 25%, 90%);
 }
 
 .user-section .changed-containers {
@@ -126,7 +126,7 @@ header {
 }
 
 .user-section .changed-containers:hover {
-    background-color: hsla(229, 27%, 20%, 0.401);
+    background-color: hsla(229, 20%, 48%, 0.401);
 }
 
 .user-section .container::before {
@@ -265,7 +265,7 @@ header {
 }
 
 .overview .container:hover {
-    background-color: rgba(229, 229, 229, 0.67);
+    background-color: hsl(226, 25%, 90%);
 }
 
 .overview .cont {
@@ -277,7 +277,7 @@ header {
 }
 
 .overview .changed-containers:hover {
-    background-color: hsla(229, 27%, 20%, 0.401);
+    background-color: hsla(229, 20%, 48%, 0.401);
 }
 
 .overview .container .interaction {
